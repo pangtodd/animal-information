@@ -1,13 +1,21 @@
 $(document).ready( function() {
-  const animal = $("input:radio[name=Animal]:checked").val();
+  $('input:radio[name=Animal]').change(function(){
+    const animal = $("input:radio[name=Animal]:checked").val();
 
-  if(animal === "Koala") {
-    $("#koala-info").show();
-  } else if(animal === "Walrus") {
-    $("#walrus-info").show();
-  } else {
-    $("crocodile-info").show();
-  }
+    if(animal === "Koala") {
+      $("#koala-info").show();
+      $("#walrus-info").hide();
+      $("#crocodile-info").hide();
+    } else if(animal === "Walrus") {
+      $("#walrus-info").show();
+      $("#crocodile-info").hide();
+      $("#koala-info").hide();
+    } else {
+      $("#crocodile-info").show();
+      $("#walrus-info").hide();
+      $("#koala-info").hide();
+    }
+  });
 });
 
 
