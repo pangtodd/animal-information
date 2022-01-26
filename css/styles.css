@@ -1,0 +1,25 @@
+.container {
+  margin-top: 2em;
+}
+
+img {
+  float: left;
+  margin-right: 15px;
+  border: 1px solid black;
+  width: 20%;
+  height: auto;
+}
+
+#koala-info, #crocodile-info, #walrus-info {
+  margin-top: 2em;
+  padding: 1em;
+  border: 2px solid lightgray;
+  display: none;
+}
+
+
+
+
+/* #drinks, #under-21 {
+  display: none;
+} */
