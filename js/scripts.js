@@ -1,6 +1,8 @@
 $(document).ready( function() {
   $('input:radio[name=Animal]').change(function(){
     const animal = $("input:radio[name=Animal]:checked").val();
+    // line 3 gets input from radio button 
+    //line 4 takes input and sets "animal" variable we will use in branching logic below
 
     if(animal === "Koala") {
       $("#koala-info").show();

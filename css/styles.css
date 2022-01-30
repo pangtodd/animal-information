@@ -10,6 +10,7 @@ img {
   height: auto;
 }
 
+/* hides responses */
 #koala-info, #crocodile-info, #walrus-info {
   margin-top: 2em;
   padding: 1em;
